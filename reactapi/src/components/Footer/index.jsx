@@ -1,12 +1,14 @@
-import './styles.css'
+import './style.css';
 
-export default function Footer (){
+function Footer() {
   const anoAtual = new Date().getFullYear();
   return (
-    <>
-      <footer className="footer">
-        <span>Copyright &copy; {anoAtual} - Todos os direitos reservados.</span>
-      </footer>
-    </>
+    <footer className="footer">
+      <div className="container">
+        <p>&copy; {anoAtual} Todos os direitos reservados.</p>
+      </div>
+    </footer>
   );
 }
+
+export default Footer;

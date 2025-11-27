@@ -1,5 +1,4 @@
-# Instalação:
-
+# Instalar:
 ```
-npm i axios yup react react-dom react-toastify react-hook-form @hookform/resolvers
+npm i react-router-dom axios react-hook-form yup @hookform/resolvers react-toastify
 ```

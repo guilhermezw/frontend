@@ -1,16 +1,19 @@
-import './styles.css'
-import{Link} from 'react-router-dom';
+import React from 'react';
+import { Link } from 'react-router-dom';
+import './style.css'; 
 
-export default function Header(){
+function Header() {
   return (
-    <>
-      <header className="header">
-        <Link to="/">Sistema</Link>
-        <nav>
-          <Link to="/cadastro">Cadastrar Funcionários</Link>
-          <Link to="/funcionarios">Listar Funcionários</Link>
+    <header className="header">
+      <div className="container">
+        <Link to="/" className="logo">SENAI</Link>
+        <nav className="nav">
+          <Link to="/cadastro" className="navLink">Cadastrar Usuário</Link>
+          <Link to="/usuarios" className="navLink">Listar Usuários</Link>
         </nav>
-      </header>
-    </>
+      </div>
+    </header>
   );
 }
+
+export default Header;
